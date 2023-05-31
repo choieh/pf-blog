@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/*layout*/
+.contents__wrapper,
+.side-menu,
+.recommand,
+.popular,
+.copyright {
+  padding: 5px 10px;
+}
+
+/*박스 위 아래 간격조정*/
+.section,
+.side {
+  padding: 40px 0 30px;
+}
+
+.copyright {
+  padding: 15px 0;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  max-width: 375px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+/* header */
+.header {
+  text-align: center;
+  background-color: #0f3089;
+}
+.header__title {
+  font-size: 1.063rem;
+  line-height: 47px;
+}
+
+.title__link {
+  color: #e2e2e2;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__wrapper {
+  background-color: #0f3089;
+}
+.nav__link {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav__link:hover .link__text {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.nav__link .link__text {
+  display: block;
+  padding: 15px 0;
+  color: #e2e2e2;
+  border-bottom: 2px solid transparent;
+}
+
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* category */
+.category:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.category__wrapper {
+  margin-bottom: 25px;
+}
+.category__item {
+  float: left;
+  width: auto;
+}
+.category__link {
+  display: block;
+  padding: 3px 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #659f3b;
+  color: #eee;
+  font-size: 0.75rem;
+}
+
+/* article */
+.article__title {
+  margin-bottom: 20px;
+  font-size: 2.25rem;
+  color: #000;
+}
+.article__text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.56;
+}
+.article__info {
+  margin: 0 0 20px;
+}
+.article__info i {
+  margin-right: 5px;
+  font-size: 1.25rem;
+}
+.article__img img {
+  max-width: 100%;
+  height: auto;
+}
+.article .text__sub-title {
+  display: block;
+  margin: 40px 0 20px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 1.25rem;
+  border-left: 5px solid #000;
+}
+
+/* channel */
+.channel {
+  position: relative;
+  margin: 35px 10px 0;
+}
+.channel__text {
+  font-size: 0.75rem;
+}
+.channel__btn {
+  display: block;
+  position: relative;
+  padding: 6px 10px 6px 22px;
+  color: #0f3089;
+  font-size: 0.813rem;
+  border-radius: 15px;
+  border: 1px solid #0f3089;
+}
+.channel__btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-52%);
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon_plus.png);
+  background-position: center;
+  background-size: cover;
+}
+.channel__img {
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.channel__img img {
+  width: 100%;
+}
+
+.banner__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+/* sub-title*/
+.side {
+  width: 100%;
+}
+
+.side .sub-title {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+}
+
+/* recommand */
+.recommand {
+  padding: 5px 5px;
+}
+.recommand__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommand__item {
+  position: relative;
+  width: 50%;
+}
+.recommand__item .item__wrapper {
+  position: relative;
+  margin: 0 5px 10px 5px;
+}
+.recommand__item .item__wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #efeff0;
+}
+.recommand__item .item__title {
+  padding: 5px;
+  font-size: 0.875rem;
+}
+.recommand__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.recommand__img img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*현재 인기있는 글*/
+.popular__list {
+  width: 100%;
+  padding: 10px 20px;
+}
+.popular__item {
+  position: relative;
+  padding: 10px 0;
+}
+.popular__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+}
+.popular__item:first-child:before {
+  height: 0;
+}
+.popular__item:hover {
+  background-color: #eee;
+}
+.popular__item .item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__item .text__wrapper {
+  padding: 10px;
+}
+.popular__item .item__text {
+  font-size: 0.75rem;
+}
+.popular__item .item__tag {
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  color: #898989;
+}
+.popular__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popular__img {
+  overflow: hidden;
+  width: 100px;
+  height: 65px;
+}
+.popular__img img {
+  width: 100%;
+}
+
+/*copyright*/
+.copyright__text {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #898989;
+}
+
+/* slide */
+.slide {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.slide__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  user-select: none; /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+}
+.slide__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 406px;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 30px;
+}
+.pagination__wrapper {
+  position: relative;
+}
+.pagination li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 0.725rem;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+.pagination li.active {
+  background-color: #eee;
+}
+
+.slide__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  cursor: pointer;
+  visibility: hidden;
+}
+.slide__btn.btn-prev {
+  left: 0;
+}
+.slide__btn.btn-next {
+  right: 0;
+}
+
+/*--------768px 이상---------*/
+@media all and (min-width: 768px) {
+  .nav__link {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .section {
+    width: 70%;
+  }
+  .side {
+    width: 30%;
+  }
+}
+/*--------1024px 이상---------*/
+@media all and (min-width: 1280px) {
+  .header,
+  .nav__wrapper,
+  .container,
+  .copyright {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .review__wrapper {
+    padding: 0 100px;
+  }
+  .slide__btn {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */
