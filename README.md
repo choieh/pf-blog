@@ -13,9 +13,9 @@ git-pages : https://choieh.github.io/pf-blog/
 ### screen shot
 
 pc
-![pc](./img/pc.png)
+![pc](https://github.com/choieh/pf-blog/assets/23207972/52994d03-273f-4f3a-935f-00ee622b6411)
 
 
 mobile
 <!-- ![mobile](./img/mo.png) -->
-<img src='./img/mo.png' width='40%'>
+<img src='https://github.com/choieh/pf-blog/assets/23207972/ff20eb69-1d0d-41b3-921d-b8cbc3ace97b' width='40%'>
