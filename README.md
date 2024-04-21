@@ -13,7 +13,8 @@ git-pages : https://choieh.github.io/pf-blog/
 ### screen shot
 
 pc
-![pc](https://github.com/choieh/pf-blog/assets/23207972/52994d03-273f-4f3a-935f-00ee622b6411)
+![image](https://github.com/choieh/pf-blog/assets/23207972/bd958475-3154-4e5a-8fc8-b6ee59cfcf0d)
+
 
 
 mobile
